@@ -2,6 +2,7 @@
 
     class Movie {
 
+        // use the trait
         use HasDirector;
 
         public $title;
@@ -11,6 +12,7 @@
         public $description;
         protected Genre $genre;
 
+        // define the constructor with instance variables 
         public function __construct($_title, $_cover, $_release_year, $_rating, Genre $_genre, $_description = null) {
             
             $this->title = $_title;
@@ -22,6 +24,7 @@
 
         }
 
+        // create the function to read movies genre
         public function getGenreName() {
             return $this->genre->getName();
         }

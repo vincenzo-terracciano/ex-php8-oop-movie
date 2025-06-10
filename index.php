@@ -1,13 +1,13 @@
 <?php
 
-    // importo il trait che utilizzo in Movie.php
+    // import trait that is used in Movie.php
     require_once "./Traits/HasDirector.php";
 
-    // importo le classi
+    // import classes
     require_once "./Models/Genre.php";
     require_once "./Models/Movie.php";
 
-    // importo l'array di film
+    // import movies array
     require_once "./db.php";
 
     var_dump($movies);
@@ -23,6 +23,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Style images size -->
     <style>
         .card-img img{
             height: 300px;
@@ -35,6 +36,7 @@
         <hr>
 
         <div class="cards-container d-flex flex-column gap-4">
+
             <?php 
             
                 foreach($movies as $movie) {
@@ -69,6 +71,7 @@
                 }
             
             ?>
+            
         </div>
     </div>
 </body>
