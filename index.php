@@ -10,7 +10,7 @@
     // import movies array
     require_once "./db.php";
 
-    var_dump($movies);
+    // var_dump($movies);
 
 ?>
 
@@ -35,7 +35,7 @@
         <h1>Movies</h1>
         <hr>
 
-        <div class="cards-container d-flex flex-column gap-4">
+        <div class="cards-container d-flex flex-column gap-4 my-5">
 
             <?php 
             
@@ -61,6 +61,9 @@
                         <?php echo $movie->getGenreName() ?>
                     </div>
                     <div class="card-text mb-2">
+                        <?php echo "Rating: " . $movie->rating ?>
+                    </div>
+                    <div class="card-text mb-2">
                         <?php echo $movie->description ?>
                     </div>
                 </div>
@@ -71,7 +74,7 @@
                 }
             
             ?>
-            
+
         </div>
     </div>
 </body>

@@ -1,13 +1,13 @@
 <?php 
 
     // create fantasy genre
-    $fantasy_genre = new Genre("Fantastico", "Il genere fantastico è un genere narrativo che introduce elementi soprannaturali o non spiegabili razionalmente nella realtà, spesso con la presenza di magia, creature leggendarie e mondi immaginari.");
+    $fantasy_genre = new Genre("Fantasy", "Il genere fantastico è un genere narrativo che introduce elementi soprannaturali o non spiegabili razionalmente nella realtà, spesso con la presenza di magia, creature leggendarie e mondi immaginari.");
 
     // create movies array with instance variables defined in the constructor
     $movies = [
         new Movie("Avatar", "images/avatar_cover.jpg", 2009, 9.3, $fantasy_genre),
-        new Movie("Spider-Man", "images/interstellar_cover.jpg", 2002, 9.8, new Genre("Azione", "Il film d'azione è un genere cinematografico caratterizzato da una trama che si sviluppa principalmente attraverso sequenze di azione, dove uno o più protagonisti affrontano sfide che richiedono coraggio e prodezza fisica.")),
-        new Movie("Interstellar", "images/spiderman_cover.jpg", 2014, 9.9, new Genre("Avventura", "Un film d'avventura è un genere cinematografico che racconta storie di imprese rischiose e piene di imprevisti, solitamente ambientate in luoghi misteriosi e pericolosi."))
+        new Movie("Spider-Man", "images/spiderman_cover.jpg", 2002, 9.8, new Genre("Action", "Il film d'azione è un genere cinematografico caratterizzato da una trama che si sviluppa principalmente attraverso sequenze di azione, dove uno o più protagonisti affrontano sfide che richiedono coraggio e prodezza fisica.")),
+        new Movie("Interstellar", "images/interstellar_cover.jpg", 2014, 9.9, new Genre("Adventure", "Un film d'avventura è un genere cinematografico che racconta storie di imprese rischiose e piene di imprevisti, solitamente ambientate in luoghi misteriosi e pericolosi."))
     ];
 
     // add description to movies array
