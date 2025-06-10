@@ -1,11 +1,16 @@
 <?php
 
+    // importo il trait che utilizzo in Movie.php
+    require_once "./Traits/HasDirector.php";
+
     // importo le classi
     require_once "./Models/Genre.php";
     require_once "./Models/Movie.php";
 
     // importo l'array di film
     require_once "./db.php";
+
+    var_dump($movies);
 
 ?>
 

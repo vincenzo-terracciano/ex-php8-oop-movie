@@ -2,6 +2,8 @@
 
     class Movie {
 
+        use HasDirector;
+
         public $title;
         public $cover;
         public $release_year;
